@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link href="../styles/output.css" rel="stylesheet">
+
+</head>
+<body class="min-h-screen bg-[url('/img/registrolg.jpg')] bg-cover"></body>
+
+        <div class=" relative pt-16 px-4 h-screen flex justify-center items-center max-w-7xl mx-auto">
+    
+            <form id="form" class="flex bg-orange-200 bg-opacity-10 flex-col  w-full gap-4 shadow-lg p-4 rounded-lg md:w-3/4 text-md lg:w-2/4">
+    
+            <div class="flex flex-col gap-2">
+                <label for="email-input" 
+                    class="font-bold"> E-mail
+                    <span class="text-red-700">*</span>
+                </label>
+    
+            <div class="flex justify-between rounded-lg border-[1px] border-orange-700 focus-within:outline
+            focus-within:outline-orange-700 p-2 bg-transparent items-center">
+    
+            <input type="text"
+                name="email-input" 
+                id="email-input" 
+                autocomplete="off"
+                class=" w-full rounded-lg bg-transparent outline-none">
+    
+            </div>
+    
+            </div>
+            
+            <div class="flex flex-col gap-2">
+    
+                <label for="password-input" 
+                    class="font-bold"> Enter your password
+                    <span class="text-red-700">*</span>
+                </label>
+    
+                <div class="flex justify-between rounded-lg border-[1px] border-orange-700 focus-within:outline
+                focus-within:outline-orange-700 p-2 bg-transparent items-center">
+    
+                    <input type="text"
+                        name="password-input" 
+                        id="password-input" 
+                        autocomplete="off"
+                        class="w-full rounded-lg bg-transparent outline-none">
+            
+                    </div>
+    
+                    <p id= "error-text" class="text-sm text-red-700">
+                    </p>
+    
+    
+            </div>
+    
+            <button 
+            id="form-btn"
+            class="text-black border-[1px] border-neutral-950 w-[4rem] rounded-lg bg-transparent mx-auto py-2 px-4 font-semibold lg:w-[6rem] transition ease-in-out disabled:opacity-20 disabled:cursor-not-allowed">Login
+            </button>
+    
+        </form>
+        
+        </div>
+
+        <nav id="nav-bar" class="pl-4 lg:pl-20 fixed m-auto top-[5%] h-10 items-center w-full">
+
+            <div>
+                <!-- <p class="absolute text-black font-medium ">Kite Center</p> -->
+            </div>
+    
+            <!-- menu escritorio -->
+    
+            <div class=" pr-4 gap-4 h-10 flex justify-end lg:px-20">
+                <a href="/" class="text-sm text-black flex items-center justify-center md:text-md font-medium">Home</a>
+                <a href="/signup" class="text-sm md:text-md  text-black flex items-center justify-center font-medium border-[1px] border-neutral-950 w-[5rem] rounded-lg">Sign up</a>
+            </div>
+    
+        </nav>
+
+
+</body>
+</html>

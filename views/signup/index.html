@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="4width=device-width, initial-scale=1.0">
+    <title>signup</title>
+    <link href="../styles/output.css" rel="stylesheet">
+</head>
+
+<body class="min-h-screen bg-[url('/img/registrolg.jpg')] bg-cover">
+
+    <nav id="nav-bar" class="z-20 pl-4 lg:pl-20 fixed m-auto top-0 flex items-end justify-end h-[5rem] w-full">
+
+        <!-- menu escritorio -->
+
+        <div class="pr-4 gap-4 h-10 flex justify-end lg:px-20">
+            <a href="/" class="text-sm text-black flex items-center justify-center md:text-md font-medium">Home</a>
+            <a href="/login" class="text-sm md:text-md text-black flex items-center justify-center font-medium border-[1px] border-neutral-950 w-[5rem] rounded-lg">Login</a>
+        </div>
+
+    </nav>
+
+    <div id="form-cont" class="relative pt-[6rem] pb-4 flex justify-center items-center max-w-5xl mx-auto">
+    <form id="form" class=" w-full px-8 bg-orange-200 bg-opacity-20 flex flex-col gap-2 bg-transparent shadow-xl p-4 rounded-lg text-md md:w-2/4">
+
+        <div class="flex flex-col gap-2">
+
+            <label for="name-input" 
+                class="font-bold text-black">Full name: 
+                <span class="text-red-700">*</span>
+            </label>
+
+            <div class="flex justify-between rounded-lg border-[1px] border-orange-700 focus-within:outline
+             focus-within:outline-orange-700 p-2 bg-transparent items-center">
+
+            <input type="text" 
+            name="name-input" 
+            id="name-input" 
+            autocomplete="off"
+            class= " placeholder:text-black placeholder:text-sm flex-grow bg-transparent outline-none">
+
+            <svg class=" text-green-700 w-6 h-6 hidden check-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+
+            <svg class=" text-red-700 w-6 h-6 hidden x-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" >
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9.75 9.75l4.5 4.5m0-4.5l-4.5 4.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>  
+            </div>
+
+            <p class="text-xs text-zinc-800">Enter your name and last name starting by uppercase e/o</p>
+
+        </div>
+
+        <div class="flex flex-col gap-2">
+            <label for="email-input" 
+                class=" text-black font-bold"> E-mail
+                <span class="text-red-700">*</span>
+            </label>
+
+        <div class="flex justify-between rounded-lg border-[1px] border-orange-700 focus-within:outline
+        focus-within:outline-orange-700 p-2 bg-transparent items-center">
+
+        <input type="text"
+            name="email-input" 
+            id="email-input" 
+            autocomplete="off" 
+            class=" placeholder:text-black placeholder:text-sm  rounded-lg bg-transparent outline-none">
+
+        <svg class=" text-green-700 w-6 h-6 hidden check-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+
+        <svg class=" text-red-700 w-6 h-6 hidden x-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" >
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9.75 9.75l4.5 4.5m0-4.5l-4.5 4.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>  
+
+        </div>
+
+        <p class="text-xs text-zinc-800">The e-mail is required</p>
+
+        </div>
+        
+        <div class="flex flex-col gap-2">
+
+            <label for="password-input" 
+                class="font-bold"> Create password
+                <span class="text-red-700">*</span>
+            </label>
+
+            <div class="flex justify-between rounded-lg border-[1px] border-orange-700 focus-within:outline
+            focus-within:outline-orange-700 p-2 bg-transparent items-center">
+
+                <input type="text"
+                    name="password-input" 
+                    id="password-input" 
+                    autocomplete="off"
+                    class="rounded-lg bg-transparent outline-none">
+        
+                <svg class=" text-green-700 w-6 h-6 hidden check-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                      </svg>
+        
+                <svg class=" text-red-700 w-6 h-6 hidden x-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" >
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M9.75 9.75l4.5 4.5m0-4.5l-4.5 4.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>  
+                </div>
+
+                <p class="text-xs text-zinc-800">
+                    Mínimo 8 caracteres, 1 Mayúscula, 1 Número, 1 Carácter especial (@,.,*) <br>
+                </p>
+
+            </div>
+
+        <div class="flex flex-col gap-2">
+            <label for="match-input" 
+                class="font-bold"> Confirm password
+                <span class="text-red-700">*</span>
+            </label>
+
+        <div class="flex justify-between rounded-lg border-[1px] border-orange-700 focus-within:outline
+        focus-within:outline-orange-700 p-2 bg-transparent items-center">
+
+                <input type="text"
+                    name="match-input" 
+                    id="match-input" 
+                    autocomplete="off"
+                    class="rounded-lg bg-transparent outline-none">
+        
+                <svg class=" text-green-700 w-6 h-6 hidden check-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                      </svg>
+        
+                <svg class=" text-red-700 w-6 h-6 hidden x-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" >
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M9.75 9.75l4.5 4.5m0-4.5l-4.5 4.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>  
+                </div>
+
+        </div>
+
+        <div class="flex flex-col gap-2">
+            <label for="academy-role" 
+                class="font-bold"> Role
+                <span class="text-red-700">*</span>
+            </label>
+
+        <div class="flex justify-between rounded-lg border-[1px] border-orange-700 focus-within:outline
+        focus-within:outline-orange-700 p-2 bg-transparent items-center">
+
+                <select name="role" id="role-select"
+                class="bg-transparent outline-none">
+                    <option value="PickRole" selected disabled>Pick a role</option>
+                    <option value="Admin">Admin</option>
+                    <option value="Caddie">Caddie</option>
+                    <option value="Teacher">Teacher</option>
+                </select>
+
+                <input type="text"
+                    name="role-input" 
+                    id="role-input" 
+                    autocomplete="off"
+                    class="rounded-lg bg-transparent outline-none">
+        
+                <svg class=" text-green-700 w-6 h-6 hidden check-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                      </svg>
+        
+                <svg class=" text-red-700 w-6 h-6 hidden x-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" >
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M9.75 9.75l4.5 4.5m0-4.5l-4.5 4.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>  
+                </div>
+
+        </div>
+
+        <div class="flex flex-col gap-2">
+            <label for="academy-code" 
+                class="font-bold"> Academy code
+                <span class="text-red-700">*</span>
+            </label>
+
+        <div class="flex justify-between rounded-lg border-[1px] border-orange-700 focus-within:outline
+        focus-within:outline-orange-700 p-2 bg-transparent items-center">
+
+                <input type="text"
+                    name="code-input" 
+                    id="code-input" 
+                    autocomplete="off"
+                    class="rounded-lg bg-transparent outline-none">
+        
+                <svg class=" text-green-700 w-6 h-6 hidden check-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                      </svg>
+        
+                <svg class=" text-red-700 w-6 h-6 hidden x-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" >
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M9.75 9.75l4.5 4.5m0-4.5l-4.5 4.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>  
+        </div>
+
+        <p class="text-xs text-zinc-800">
+        The code should match with your role </p>
+
+        </div>
+
+
+
+        <button 
+        id="form-btn"
+        disabled
+        class="mt-4 text-black justify-center font-bold border-[2px] border-neutral-950 rounded-lg mx-auto w-[8rem] py-2 px-4 transition ease-in-out disabled:opacity-20 disabled:cursor-not-allowed"> Sing up
+
+        </button>
+
+    </form>
+    </div>
+
+</body>
+
+</html>
