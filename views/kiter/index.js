@@ -421,6 +421,76 @@ shopButton.addEventListener('click', e => {
     })
 });
 
+const openShop = () => {
+    const info = document.createElement('div')
+    info.classList.add('flex', 'flex-col', 'bg-white', 'items-center', 'w-screen', 'min-h-screen');
+    info.innerHTML = `
+    <div class="flex flex-col md:flex-row bg-white md:justify-center">
+    <div class="md:hidden min-h-screen w-screen flex lg:gap-24 grow-0 text-black">
+    <div id="service-info" class="flex flex-col items-center my-8 w-full h-3/4 md:h-[80%]">
+        <img src="/img/harnesses.webp"  class="hover:animate-pulse w-[70%] h-auto bg-slate-200 " alt="">
+        <p class="font-bold text-2xl m-8" >Harnesses</p>
+        <img src="/img/vest.webp"  class=" hover:animate-pulse  w-[70%] h-auto bg-slate-200 " alt="">
+        <p class="font-bold text-2xl m-8" >Protection</p>
+        <img src="/img/wtsuit.webp" class="hover:animate-pulse  w-[70%] h-auto bg-slate-200 " alt="">
+        <p class="font-bold text-2xl m-8" >Neoprene</p>
+        <img src="/img/apparel.webp" class="hover:animate-pulse  w-[70%] h-auto bg-slate-200 " alt="">
+        <p class="font-bold text-2xl m-8" >Apparel</p>
+        <img src="/img/leash.webp" class="hover:animate-pulse  w-[70%] h-auto bg-slate-200 " alt="">
+        <p class="font-bold text-2xl m-8" >Accesories</p>
+        <img src="/img/parts.webp" class="hover:animate-pulse w-[70%] h-auto bg-slate-200 " alt="">
+        <p class="font-bold text-2xl mt-8" >Parts</p>
+    </div>
+
+</div>
+
+<div class="hidden md:flex md:w-[50%] h-screen justify-center items-center lg:gap-24 grow-0 text-black">
+    <div id="service-info" class="flex flex-col justify-center items-center w-full h-3/4 md:h-[80%]">
+        <p class="font-bold text-2xl mb-8" >Harnesses</p>
+        <img src="/img/harnesses.webp"  class="hover:animate-pulse  w-[62%] h-auto bg-slate-200 " alt="">
+        <p class="font-bold text-2xl m-8" >Protection</p>
+        <img src="/img/vest.webp"  class="hover:animate-pulse  w-[62%] h-auto bg-slate-200 " alt="">
+    </div>
+</div>
+
+<div class="hidden md:flex md:w-[50%] h-screen justify-center items-center gap-8 lg:gap-24 grow-0 text-black">
+    <div id="service-info" class="flex flex-col justify-center items-center w-full h-3/4 md:h-[80%]">
+        <p class="font-bold text-2xl mb-8" >Neoprene</p>
+        <img src="/img/wtsuit.webp" class=" hover:animate-pulse  w-[62%] h-auto bg-slate-200 " alt="">
+        <p class="font-bold text-2xl m-8" >Apparel</p>
+        <img src="/img/apparel.webp" class="hover:animate-pulse  w-[62%] h-auto bg-slate-200 " alt="">
+    </div>
+</div>  
+
+<div class="hidden md:flex md:w-[50%] h-screen justify-center items-center gap-8 lg:gap-24 grow-0 text-black">
+    <div id="service-info" class="flex flex-col justify-center items-center w-full h-3/4 md:h-[80%]">
+        <p class="font-bold text-2xl mb-8" >Accesories</p>
+        <img src="/img/leash.webp" class="hover:animate-pulse  w-[62%] h-auto bg-slate-200 " alt="">
+        <p class="font-bold text-2xl m-8" >Parts</p>
+        <img src="/img/parts.webp" class="hover:animate-pulse  w-[62%] h-auto bg-slate-200 " alt="">
+    </div>
+</div> 
+</div>
+<div class="flex w-[4rem] h-[4rem] self-center justify-center items-center p-4">
+<button class="closeShop absolute self-center w-[2.5rem]"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+    <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
+  </svg>
+</button>
+</div>
+    `
+    servicesInfo.replaceChildren(info);
+
+    // Boton cerrar escritorio 
+
+    servicesInfo.addEventListener ('click', e => {
+        if (e.target.closest('.closeShop')){
+            info.classList.add('hidden')
+        }
+    })
+}
+
+openShop()
+
 rentalButton.addEventListener('click', e => {
     const info = document.createElement('div')
     info.classList.add('flex', 'flex-col', 'bg-white', 'items-center', 'w-screen', 'min-h-screen');
